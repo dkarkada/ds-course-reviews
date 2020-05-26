@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700');
+
+:root {
+  --bg-color: #ffffff;
+  --pane-color: #f6f6f6;
+  --fg-color: #002a52;
+  --fg-color-2: #a8a8a8;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #181818;
+    --pane-color: #121212;
+    --fg-color: #c4c4c4;
+    --fg-color-2: #353535;
+  }
+  .App {
+    background-image: url("./assets/tiledark.png");
+  }
+}
+
+[data-theme="dark"] {
+  --bg-color: #181818;
+  --pane-color: #121212;
+  --fg-color: #b9acc9;
+  --fg-color-2: #353535;
+}
+[data-theme="dark"] .App {
+  background-image: url("./assets/tiledark.png");
+}
+
+.App {
+  color: var(--fg-color);
+  background-color: var(--bg-color);
+  background-image: url("./assets/tile.png");
+  background-position: 0px 0px;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  font-family: 'Noto Sans JP', sans-serif;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+  font-size: 30pt;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Merriweather';
+  font-size: 150%;
+}
+
+center#loading {
+  margin-top: 400px;
+}
+
+.review {
+  max-width: 500px;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid darkgray;
+}
+
+.column {
+  background-color: inherit;
+  max-width: 900px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 10px;
+}
+
+input, select {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.selector {
+  color: var(--fg-color);
+  background-color: var(--pane-color);
+  border: 1px solid var(--fg-color-2);
+  box-shadow: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: large;
+  width: 400px;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .selector {
+    max-width: 80vh;
+  }
+}
+
+textarea::placeholder {
+  color: var(--fg-color-2);
+}
+
+button {
+  font-family: inherit;
+  font-size: large;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid var(--fg-color);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+button:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
+}
+
+.review-writer .selector {
+  display:block;
+}
+.review-writer label {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+#darkmodeButton {
+  margin: 15px;
+  position: fixed;
+}
+#darkmodeButton:hover {
+  cursor: pointer;
+}

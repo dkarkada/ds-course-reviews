@@ -1,0 +1,28 @@
+[
+    {
+        "dept": "Astronomy",
+        "coursenum": "AST 353",
+        "coursename": "Astrophysics",
+        "prof": "Milos",
+        "date": "Fall 2018",
+        "difficulty": "asd",
+        "workload": "sdf",
+        "lectures": "gdsf",
+        "misc": "afsdsd",
+        "reviewer": "",
+        "eid": "dk25922"
+    },
+    {
+        "dept": "Astronomy",
+        "coursenum": "AST 353",
+        "coursename": "Astrophysics",
+        "prof": "Milos",
+        "date": "Fall 2018",
+        "difficulty": "asd",
+        "workload": "sdf",
+        "lectures": "gdsf",
+        "misc": "afsdsd",
+        "reviewer": "",
+        "eid": "dk25922"
+    }
+]
